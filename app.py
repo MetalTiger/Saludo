@@ -5,9 +5,9 @@ app = Flask(__name__)
 def hello():
     return "Hola compa!"
  
- @app.route("/index")
- def index():
-     return open("index.html").read()
+@app.route("/index")
+def index():
+    return open("index.html").read()
  
 if __name__ == "__main__":
     app.run()
